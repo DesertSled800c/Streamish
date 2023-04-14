@@ -67,3 +67,6 @@ C:\Users\deser\source\repos\Streamish\Streamish\obj\Debug\net5.0\refint\Streamis
 C:\Users\deser\source\repos\Streamish\Streamish\obj\Debug\net5.0\Streamish.pdb
 C:\Users\deser\source\repos\Streamish\Streamish\obj\Debug\net5.0\Streamish.genruntimeconfig.cache
 C:\Users\deser\source\repos\Streamish\Streamish\obj\Debug\net5.0\ref\Streamish.dll
+C:\Users\deser\source\repos\Streamish\Streamish\bin\Debug\net5.0\client\package-lock.json
+C:\Users\deser\source\repos\Streamish\Streamish\bin\Debug\net5.0\client\package.json
+C:\Users\deser\source\repos\Streamish\Streamish\bin\Debug\net5.0\client\public\manifest.json
