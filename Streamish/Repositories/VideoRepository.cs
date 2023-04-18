@@ -254,7 +254,7 @@ namespace Streamish.Repositories
             }
         }
 
-        public Video GetByUserId(int id)
+        public List<Video> GetByUserId(int id)
         {
             using (var conn = Connection)
             {
@@ -272,15 +272,12 @@ namespace Streamish.Repositories
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
 
-                        Video video = null;
-                        if (reader.Read())
+                        var videos = new List<Video>();
+                        while (reader.Read())
                         {
-                            if (video == null)
-                            {
-                                video = UserVideos(reader);
-                            }
+                            videos.Add(UserVideos(reader));
                         }
-                        return video;
+                        return videos;
                     }
                 }
             }
