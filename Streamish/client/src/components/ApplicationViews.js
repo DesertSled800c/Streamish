@@ -12,11 +12,8 @@ const ApplicationViews = () => {
         <Route path="videos">
           <Route index element={<VideoList />} />
           <Route path="add" element={<VideoForm />} />
-          <Route
-            path="users/:id"
-            element={<UserVideos />}
-          />
         </Route>
+        <Route path="users/:id" element={<UserVideos />} />
       </Route>
       <Route path="*" element={<p>Whoops, nothing here...</p>} />
     </Routes>
