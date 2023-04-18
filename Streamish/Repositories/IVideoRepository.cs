@@ -15,5 +15,6 @@ namespace Streamish.Repositories
         public Video GetVideoByIdWithComments(int id);
         public List<Video> Search(string criterion, bool sortDescending);
         public List<Video> GetHottestVideos(DateTime date);
+        public Video GetByUserId(int id);
     }
 }

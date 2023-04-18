@@ -32,6 +32,17 @@ namespace Streamish.Controllers
             return Ok(video);
         }
 
+        [HttpGet("users/{id}")]
+        public IActionResult GetVidsByUserId(int id)
+        {
+            var video = _videoRepository.GetByUserId(id);
+            if (video == null)
+            {
+                return NotFound();
+            }
+            return Ok(video);
+        }
+
         //[HttpPost]
         //public IActionResult Post(Video video)
         //{

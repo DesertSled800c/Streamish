@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
 import { useParams } from "react-router-dom";
 import Video from "./Video";
-import { getVideo } from "../modules/videoManager";
+import { getAllVideos } from "../modules/videoManager";
 
 const VideoDetails = () => {
   const [video, setVideo] = useState();
   const { id } = useParams();
 
   useEffect(() => {
-    getVideo(id).then(setVideo);
+    getAllVideos(id).then(setVideo);
   }, []);
 
   if (!video) {
