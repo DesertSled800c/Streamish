@@ -19,6 +19,7 @@ namespace Streamish.Models
         public DateTime DateCreated { get; set; }
         public List<Video> Videos { get; set; }
         public List<Comment> Comments { get; set; }
-
+        [Required]
+        public string FirebaseUserId { get; set; }
     }
 }
